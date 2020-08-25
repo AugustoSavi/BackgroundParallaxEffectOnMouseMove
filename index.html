@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="parallax.js"></script>
+    <title>Background Parallax Effect On Mouse Move</title>
+</head>
+<body>
+    <div class="container">
+
+        <ul id="scene">
+            <li class="layer" data-depth=".1"><img src="./assets/text.png" alt="text"/></li>
+            <li class="layer" data-depth="1"><img src="./assets/mars.png" alt="mars"/></li>
+            <li class="layer" data-depth="-1"><img src="./assets/moon.png" alt="moon"/></li>
+            <li class="layer" data-depth="2"><img src="./assets/astronaut.png" alt="austronaut"/></li>
+            <li class="layer" data-depth="0.5"><img src="./assets/rocket.png" alt="rocket"/></li>
+        </ul>
+
+    </div>
+</body>
+    <script>
+        var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+    </script>
+</html>
